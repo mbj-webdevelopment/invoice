@@ -1,0 +1,84 @@
+#paypal_invoice_item table th, #paypal_select_client table th {
+    width: 110px;
+}
+#paypal_invoice_item #Quantity { width: 54px;}
+#paypal_invoice_item #UnitCost { width: 65px;}
+#paypal_invoice_item #Price { width: 65px;}
+#paypal_invoice_item #Item {width: 349px;}
+#paypal_invoice_item #text_rate {width: 100px;}
+#paypal_invoice_item #Item_details {height: 28px; width: 713px;}
+
+
+#paypal_invoice_tax_section th input {
+    padding: 6px;
+}
+#paypal_invoice_tax_section th.w115 {
+    width:115px;
+}
+#paypal_invoice_tax_section th.w80 {
+    width:80px;
+}
+#paypal_invoice_tax_section {
+    width: 80%;
+}
+.paypal_invoice_tax_add_new .add_field_button {
+    float: right;
+}
+.paypal_invoice_tax_add_new {
+    width: 80%;
+}
+#paypal_invoice_tax_section td.center {
+    text-align: center;
+}
+#paypal_invoice_tax_section td a.delete {
+    color: #a00;
+    cursor: pointer;
+}
+#paypal_ipn_primary_url {
+    width: 81%;
+}
+#paypal_select_client #client_view{ float: right; }
+#the-list .type-clients .hide-if-no-js {
+    display: none;
+}
+
+#the-list .type-clients .view {
+    display: none;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    #paypal_invoice_item input, #paypal_invoice_item textarea {
+        width: 100% !important;
+    }
+
+}
